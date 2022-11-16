@@ -1,0 +1,21 @@
+.Menu{
+    display: flex;
+    padding: 20px;
+    font-size: 17px;
+    background-color: khaki;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-inline: 100px;
+}
+
+h1{
+    font-size: 20px;
+    margin:80px;
+}
+
+p{
+    margin: 10px;
+}
