@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url(../IMG/Background-colmeia-1200px-800px.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main{
+    background-color: white;
+    height: 100vh;
+}
+
+

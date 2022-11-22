@@ -1,0 +1,10 @@
+body{
+    background: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .6)), url(../IMG/Backgraund-amarelo-1200px-1800px.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    height: 89vh;
+}
