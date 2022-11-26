@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="./style_contato.css">
-    <title>Página da Vitória e do João Gabriel</title>
+    <title>Vitória e João Gabriel</title>
 </head>
 
 <body>
@@ -24,21 +24,90 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <h1>Formulário de Contato</h1>
-
-        <form action="">
-            <p>Nomes*</p>
-            <p>E-mails*</p>
-            <p>Telefones</p>
-            <p>Cidade(5 opções, pelo menos)(campo select)</p>
-            <p>Estado(3 opções, pelo menos)(campo select)</p>
-            <p>Idade</p>
-            <p>Sexo*(campo radio)</p>
-            <p>Motivo do Contato*: Dúvida-Elogio-Outro(campo select)</p>
-            <p>Área de Texto*(para motivo)</p>
+        <h1>Formalário de Contato</h1>
+        <form>
+            <fieldset id="dados">
+                <legend>Dados pessoais</legend>
+                <!---->
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" name="nome" placeholder="Escreva seu nome" required>
+                </div>
+                <!---->
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" autocomplete="email" placeholder="xxxxx@dominio.com"
+                        required>
+                </div>
+                <!---->
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input id="telefone" type="tel" placeholder="ex.:(xx)xxxx-xxxx" autocomplete="">
+                </div>
+                <!---->
+                <div class="campo">
+                    <label for="celular">Celular:</label>
+                    <input id="celular" type="tel" placeholder="ex.:(xx)9xxxx-xxxx" autocomplete="">
+                </div>
+                <!---->
+                <div class="campo">
+                    <label for="idade">Data de nascimento</label>
+                    <input id="idade" type="date">
+                </div>
+                <!---->
+                <div class="campo">
+                    <label for="sexo">Sexo:</label>
+                    <input id="sexo" type="radio" name="OPCAO" value="opc1">feminino
+                    <input id="sexo" type="radio" name="OPCAO" value="opc2">masculino
+                    <input id="sexo" type="radio" name="OPCAO" value="opc3">outros
+                </div>
+                <!---->
+                <div class="campo">
+                    <label for="estadoselect">Estado:</label>
+                    <select name="estado" id="estadoselect">
+                        <option selected disabled value="">Selecione --</option>
+                        <option value="est1">TO</option>
+                        <option value="est2">PA</option>
+                        <option value="est3">MA</option>
+                    </select>
+                </div>
+                <!---->
+                <div class="campo">
+                    <label for="cidadeselect">Cidade:</label>
+                    <select name="cidade" id="cidadeselect">
+                        <option selected disabled value="">Selecione --</option>
+                        <option value="cid1">Palmas</option>
+                        <option value="cid2">Araguaína</option>
+                        <option value="cid3">Porto Nacional</option>
+                        <option value="cid4">São Luís</option>
+                        <option value="cid5">Belém</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset id="assunto">
+                <legend>Assunto</legend>
+                <!---->
+                <div class="campo">
+                    <label for="motivo">Motivo para contato:</label>
+                    <select name="motivoselect" id="motivo" required>
+                        <option selected disabled value="">Selecione --</option>
+                        <option value="motv1">Dúvida</option>
+                        <option value="motv2">Elogio</option>
+                        <option value="motv3">Outro</option>
+                    </select>
+                </div>
+                <!---->
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <br>
+                    <textarea name="mensagem" id="mensagem" cols="45" rows="8" maxlength="600"
+                        placeholder="Digite sua mensagem" required></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" name="button">Enviar</button>
         </form>
+
     </main>
 </body>
 
