@@ -25,9 +25,17 @@ fieldset{
 
 form{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border: 5px green dashed;
     margin: 40px 145px;
+    height: 700px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 h1{
@@ -39,6 +47,10 @@ h1{
 input, select, textarea, button{
     border-radius: 5px;
     border: 2px solid rgba(36, 94, 14, 0.479);
+}
+
+#assunto{
+    height: 70%;
 }
 
 .campo{
@@ -69,13 +81,14 @@ button{
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    position: absolute;
     top: 90%;
-    left: 50%;
+    left: 40%;
+    margin-left: 18px;
 }
 
 button:hover{
     background: rgba(6, 92, 6, 0.849);
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
+
 }
