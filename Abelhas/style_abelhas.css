@@ -1,46 +1,46 @@
-body{
-    background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url(../IMG/Background-colmeia-1200px-800px.jpg);
+body {
+    background: linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), url(../IMG/Background-colmeia-1200px-800px.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
-main{
+main {
     background-color: white;
-    height: 100vh;
+    height: max-content;
+    padding: 50px 50px 0px;
 }
 
+h1 {
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
 
-.cabeça1 {
-    align-items: center;
+}
+
+h2{
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+p{
+    font-family: 'Zilla Slab', serif;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+
+}
+
+#caixas{
     display: flex;
+    margin: 40px;
+    flex-direction: column;
+}
+
+.texto{
+    margin: 20px;
+    height: 400px;
+    width: 600px;
+    box-shadow: 2px 2px 15px rgb(194, 193, 193);
+    background-color: rgb(255, 247, 236);
     justify-content: center;
+    text-align: justify;
 }
-
-.cabeça2{
-    align-items: center;
-    display: flexbox;
-    justify-content: center;
-}
-
-.manin{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 100px;
-    font-size: 20px;
-    background-color: rgb(229, 255, 0);
-}
-
-
-.foto2{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-/*.borda1 {
-background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://images.unsplash.com/photo-1580912458557-8bae76ee5bac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
-background-size: cover;
-height: 250vh;
-width: 250vw;
-}*/ 
-
