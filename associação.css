@@ -1,74 +1,17 @@
 body {
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(https://images.unsplash.com/photo-1580912458557-8bae76ee5bac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
     background-size: cover;
-    height: 90vh;
+    height: 150vh;
     width: 95vw;
-    border-radius: 10px;
-} 
-
-.comentarios1 {  
-    color: coral
+    border-radius: 100px;
 }
 
-.comentarios2 { 
-    color: coral;
+.foto {
+    display: flex;
 }
 
-.comentarios3 {
-    color: coral;
+.cabeça {
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
-
-.comentarios4 { 
-    color: coral;
-}
-
-.comentarios5 {
-    color: coral;
-}
-
-.agradecimentos {
-    text-align: center;
-}
-
-.cinza1 {
-    border: solid 1px rgb(0, 0, 0);
-    padding-left:  10px;
-    width: 1314px;
-    height: 25%;
-    background-color: #dddddddd;
-}
-
-.cinza2 {
-    border: solid 1px rgb(0, 0, 0);
-    padding-left:  10px;
-    width: 1314px;
-    height: 25%;
-    background-color: #ffffffdd;
-}
-
-.cinza3 {
-    border: solid 1px rgb(0, 0, 0);
-    padding-left:  10px;
-    width: 1314px;
-    height: 25%;
-    background-color: #dddddddd;
-}
-
-.cinza4 {
-    border: solid 1px rgb(0, 0, 0);
-    padding-left:  10px;
-    width: 1314px;
-    height: 25%;
-    background-color: #ffffffdd;
-}
-
-.cinza5 {
-    border: solid 1px rgb(0, 0, 0);
-    padding-left:  10px;
-    width: 1314px;
-    height: 25%;
-    background-color: #dddddddd;
-}
-
-
-
