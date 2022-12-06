@@ -7,7 +7,9 @@ body {
 main {
     background-color: white;
     height: max-content;
-    padding: 50px 50px 0px;
+    display:flex;
+    flex-direction:column;
+    min-width:fit-content;
 }
 
 h1 {
@@ -37,10 +39,19 @@ p{
 
 .texto{
     margin: 20px;
-    height: 400px;
-    width: 600px;
+    min-width: 200px;
+    max-width: fit-content;
+
     box-shadow: 2px 2px 15px rgb(194, 193, 193);
     background-color: rgb(255, 247, 236);
     justify-content: center;
     text-align: justify;
+    padding: 16px;
+}
+
+.titulo{
+    text-align: center;
+    width:100%;
+    padding: 16px;
+
 }

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitória e João Gabriel</title>
     <link rel="stylesheet" href="../CSS/reset.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="./style_index.css">
 </head>
@@ -14,22 +17,48 @@
 <body>
     <header>
         <nav class="Menu">
-            <img src="../IMG/Logotipo-unitins-menor.jpg" alt="">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="../Quemsou/quemsou.html">Sobre nós</a></li>
-                <li><a href="../Contato/contato.html">Contatos</a></li>
-                <li><a href="../Associacao/associacao.html">Associação</a></li>
-                <li><a href="../Abelhas/abelhas.html">Abelhas</a></li>
-            </ul>
+            <div class="nav-wrapper">
+                <a href="https://www.unitins.br/nPortal/" target="_blank" class="brand-logo"><img id="logo" src="../IMG/Logotipo-unitins-menor.jpg" alt=""></a>
+                <a href="#" data-activates="menu-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="item" href="./index.html">Home</a></li>
+                    <li><a class="item" href="../Quemsou/quemsou.html">Sobre nós</a></li>
+                    <li><a class="item" href="../Contato/contato.html">Contato</a></li>
+                    <li><a class="item" href="../Associacao/associacao.html">Apicultores</a></li>
+                    <li><a class="item" href="../Abelhas/abelhas.html">Abelhas</a></li>
+                </ul>
+
+                <ul class="side-nav" id="menu-mobile">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="../Quemsou/quemsou.html">Sobre nós</a></li>
+                    <li><a href="../Contato/contato.html">Contato</a></li>
+                    <li><a href="../Associacao/associacao.html">Apicultores</a></li>
+                    <li><a href="../Abelhas/abelhas.html">Abelhas</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <main>
-        <h1>Trabalho prático HTML + CSS + JS dos estudandes Vitória e João Gabriel</h1>
-        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque alias reiciendis, ipsam
+        <h1>Trabalho prático HTML + CSS + JS dos estudantes Vitória e João Gabriel</h1>
+        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque alias reiciendis,
+            ipsam
             eligendi veniam sit et fuga assumenda consequuntur maiores repellendus incidunt impedit dolorum ratione
             optio nostrum quia tenetur.</blockquote>
     </main>
+
+    <footer>
+        Desenvolvido por Fulano e Ciclano na disciplina de Desenvolvimento Front-End – Data
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script>
+    $(function(){
+        $(".button-collapse").sideNav();
+    });
+    </script>
 </body>
 
 </html>
