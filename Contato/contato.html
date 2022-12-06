@@ -6,30 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="./style_contato.css">
     <title>Vitória e João Gabriel</title>
 </head>
 
-<body >
+<body>
     <header>
-        <nav class="Menu">
+        <nav>
             <div class="nav-wrapper">
-                <a href="https://www.unitins.br/nPortal/" target="_blank" class="brand-logo"><img id="logo" src="../IMG/Logotipo-unitins-menor.jpg" alt=""></a>
-                <a href="#" data-activates="menu-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
+                <a href="https://www.unitins.br/nPortal/" target="_blank" class="brand-logo"><img id="logo"
+                        src="../IMG/Logotipo-unitins-menor.jpg" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="item" href="../Index/index.html">Home</a></li>
-                    <li><a class="item" href="../Quemsou/quemsou.html">Sobre nós</a></li>
-                    <li><a class="item" href="./contato.html">Contato</a></li>
-                    <li><a class="item" href="../Associacao/associacao.html">Apicultores</a></li>
-                    <li><a class="item" href="../Abelhas/abelhas.html">Abelhas</a></li>
-                </ul>
-
-                <ul class="side-nav" id="menu-mobile">
                     <li><a href="../Index/index.html">Home</a></li>
                     <li><a href="../Quemsou/quemsou.html">Sobre nós</a></li>
                     <li><a href="./contato.html">Contato</a></li>
@@ -38,6 +30,14 @@
                 </ul>
             </div>
         </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="../Index/index.html">Home</a></li>
+            <li><a href="../Quemsou/quemsou.html">Sobre nós</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="../Associacao/associacao.html">Apicultores</a></li>
+            <li><a href="../Abelhas/abelhas.html">Abelhas</a></li>
+        </ul>
     </header>
     <main>
         <h1>Formulário de Contato</h1>
@@ -48,23 +48,29 @@
                     <!---->
                     <div class="campo">
                         <label for="nome">Nome*</label>
-                        <input id="nome" type="text" name="nome" placeholder="Escreva seu nome" required oninvalid="this.setCustomValidity('Insira seu nome')" oninput="setCustomValidity('')">
+                        <input id="nome" type="text" name="nome" placeholder="Escreva seu nome" required
+                            oninvalid="this.setCustomValidity('Insira seu nome')" oninput="setCustomValidity('')">
                     </div>
                     <!---->
                     <div class="campo">
                         <label for="email">E-mail*</label>
                         <input id="email" type="email" name="email" autocomplete="email" placeholder="xxxxx@dominio.com"
-                            required oninvalid="this.setCustomValidity('Digite seu email de acordo com o modelo')" oninput="setCustomValidity('')">
+                            required oninvalid="this.setCustomValidity('Digite seu email de acordo com o modelo')"
+                            oninput="setCustomValidity('')">
                     </div>
                     <!---->
                     <div class="campo">
                         <label for="telefone">Telefone:</label>
-                        <input id="telefone" type="tel" pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}" oninvalid="this.setCustomValidity('Digite apenas números de acordo com o modelo!')" oninput="setCustomValidity('')" placeholder="ex.:(xx)xxxx-xxxx" autocomplete="tel-local">
+                        <input id="telefone" type="tel" pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}"
+                            oninvalid="this.setCustomValidity('Digite apenas números de acordo com o modelo!')"
+                            oninput="setCustomValidity('')" placeholder="ex.:(xx)xxxx-xxxx" autocomplete="tel-local">
                     </div>
                     <!---->
                     <div class="campo">
                         <label for="celular">Celular:</label>
-                        <input id="celular" type="tel" oninvalid="this.setCustomValidity('Digite apenas números de acordo com o modelo!')" oninput="setCustomValidity('')" placeholder="ex.:(xx)9xxxx-xxxx" autocomplete="">
+                        <input id="celular" type="tel"
+                            oninvalid="this.setCustomValidity('Digite apenas números de acordo com o modelo!')"
+                            oninput="setCustomValidity('')" placeholder="ex.:(xx)9xxxx-xxxx" autocomplete="">
                     </div>
                     <!---->
                     <div class="campo">
@@ -106,7 +112,8 @@
                     <!---->
                     <div class="campo">
                         <label for="motivo">Motivo para contato:*</label>
-                        <select name="motivoselect" id="motivo" required oninvalid="this.setCustomValidity('Selecione o assunto')" oninput="setCustomValidity('')">
+                        <select name="motivoselect" id="motivo" required
+                            oninvalid="this.setCustomValidity('Selecione o assunto')" oninput="setCustomValidity('')">
                             <option selected disabled value="">Selecione --</option>
                             <option value="motv1">Dúvida</option>
                             <option value="motv2">Elogio</option>
@@ -118,7 +125,9 @@
                         <label for="mensagem">Mensagem*</label>
                         <br>
                         <textarea name="mensagem" id="mensagem" cols="45" rows="8" maxlength="600"
-                            placeholder="Digite sua mensagem(limite de 600 caracteres)" required oninvalid="this.setCustomValidity('Escreva sua mensagem')" oninput="setCustomValidity('')"></textarea>
+                            placeholder="Digite sua mensagem(limite de 600 caracteres)" required
+                            oninvalid="this.setCustomValidity('Escreva sua mensagem')"
+                            oninput="setCustomValidity('')"></textarea>
                     </div>
                     <button type="submit" name="button" onclick="validar()">Enviar</button>
                 </fieldset>
@@ -129,21 +138,20 @@
         </script>
     </main>
     <footer>
-        Desenvolvido por Fulano e Ciclano na disciplina de Desenvolvimento Front-End – Data
+        Desenvolvido por Vitória Gabriela e João Gabriel na disciplina de <a href="https://www.unitins.br/nPortal/sistemas-de-informacao-palmas" target="_blank">Desenvolvimento Front-End</a> – 2022
     </footer>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script src="../materialize/js/materialize.js"></script>
     <script>
-        $(function(){
-            $(".button-collapse").sideNav();
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var options = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+            var collapsibleElem = document.querySelector('.collapsible');
+            var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
         });
-        </script>
-          <script>
-            $(document).ready(function() {
-               $('select').material_select();
-           });
-         </script>
+    </script>
 </body>
 
 </html>
