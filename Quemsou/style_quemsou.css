@@ -61,7 +61,7 @@ ul{
     list-style: circle;
 }
 
-blockquote p, ul{
+blockquote p, ul.lista{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     padding-bottom: 13px;  

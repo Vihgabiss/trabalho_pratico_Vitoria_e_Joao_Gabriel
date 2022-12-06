@@ -62,11 +62,11 @@ label{
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea{
-    box-shadow:  rgba(0, 0, 0, 0.2) 1px 2px 3px 1px;
+    box-shadow:  rgba(0, 0, 0, 0.397) 1px 2px 3px 1px;
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, input[type="date"]{
-    height: 26px;
+    height: 3em;
 }
 
 .campo input:focus, .campo select:focus, .campo textarea:focus{
@@ -97,3 +97,4 @@ button:hover{
     border: inset rgba(3, 14, 37);
     color: rgba(255, 255, 255, 0.623);
 }
+

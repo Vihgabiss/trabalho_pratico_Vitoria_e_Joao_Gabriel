@@ -24,7 +24,7 @@ function validar() {
     
     if(!regexEmail.test(email.value)){
        email.focus();
-       alert("bote o .com")
+       alert("Coloque o '@' e o '.com'")
     }
 
     const regexCelular = /\([0-9]{2}\)9[0-9]{4}-[0-9]{4}/
@@ -47,7 +47,6 @@ function validar() {
 
     if(cidadeselect.value == "") {
         cidadeselect.focus();
-        return
     }
 
     if(motivo.value == "") {
@@ -56,5 +55,6 @@ function validar() {
 
     if(mensagem.value == "") {
         mensagem.focus();
+        return
     }
 }

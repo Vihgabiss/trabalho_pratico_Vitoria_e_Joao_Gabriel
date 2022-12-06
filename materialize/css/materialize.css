@@ -2375,7 +2375,7 @@ select,
 textarea {
   font-family: sans-serif;
   /* 1 */
-  font-size: 100%;
+  font-size: 18px;
   /* 1 */
   line-height: 1.15;
   /* 1 */
@@ -6134,18 +6134,18 @@ input[type=tel]:not(.browser-default),
 input[type=number]:not(.browser-default),
 input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
-  background-color: transparent;
+  /*background-color: transparent;
   border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;*/
   border-bottom: 1px solid #9e9e9e;
   border-radius: 0;
   outline: none;
   height: 3rem;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 0 8px 0;
   padding: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   -webkit-transition: border .3s, -webkit-box-shadow .3s;
@@ -6667,11 +6667,11 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
 }
 
 /* Textarea */
-textarea {
+/*textarea {
   width: 100%;
   height: 3rem;
   background-color: transparent;
-}
+}*/
 
 textarea.materialize-textarea {
   line-height: normal;
@@ -6716,12 +6716,12 @@ textarea.materialize-textarea {
 
 /* Radio Buttons
    ========================================================================== */
-[type="radio"]:not(:checked),
+/*[type="radio"]:not(:checked),
 [type="radio"]:checked {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-}
+}*/
 
 [type="radio"]:not(:checked) + span,
 [type="radio"]:checked + span {
@@ -7137,9 +7137,9 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 
 /* Select Field
    ========================================================================== */
-select {
+/*select {
   display: none;
-}
+}*/
 
 select.browser-default {
   display: block;
