@@ -5,6 +5,76 @@ body{
 }
 
 main{
-    background-color: rgb(255, 255, 255);
-    height: 89vh;
+    justify-content: center;
+    
+}
+
+.titulo2{
+    font-size: 40px;  
+    background-color: lightsteelblue;
+    color: rgb(34, 38, 41);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 2px 2px 2px white;
+
+}
+
+.infos{
+    display: flex;
+    justify-content: space-between;
+}
+
+#vitoria, #joao{
+    margin: 20px 30px;
+    box-shadow: 2px 2px 15px   rgba(100, 100, 100, 0.411);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    
+}
+
+.imagem{
+    width: 100%;
+    height: auto;
+
+}
+
+.foto{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+}
+
+blockquote{
+    width: 20rem;
+    margin: 30px 15px;
+    padding: 20px 0;
+    height: 63%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: circle;
+}
+
+blockquote p, ul{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding-bottom: 13px;  
+    margin: 0 10px;
+}
+
+blockquote h1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 10px 10px;
+}
+
+blockquote ul li{
+    margin: 6px 15px;
 }

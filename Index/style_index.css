@@ -4,11 +4,17 @@ body{
     background-attachment: fixed;
 }
 
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
-h1{
+.titulo{
     box-sizing: border-box;
     padding: 40px 190px 0;
-    font-size: 23px;
+    font-size: 25px;
+
 }
 
 blockquote{
