@@ -3,8 +3,7 @@ const imagesUrl = [
     "../IMG/abelha-2.jpg",
     "../IMG/abelha-3.jpg",
     "../IMG/abelha-4.jpg",
-    "../IMG/abelha-5.jpg",
-    
+    "../IMG/abelha-5.jpg", 
 ]
 
 

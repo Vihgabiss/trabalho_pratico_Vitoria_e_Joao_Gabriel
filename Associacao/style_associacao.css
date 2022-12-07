@@ -5,18 +5,63 @@ body{
     background-size: cover;
 }
 
-main{
-    background-color: white;
-    height: 100vh;
+
+.titulo {
+    margin: 0 50px;
+    text-shadow: 2px 2px 2px rgb(168, 168, 168);
 }
 
-.foto {
-    display: flex;
+p{
+    margin: 6px 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.cabeça {
+.texto1, .texto2, .texto3, .texto4{
+    margin: 10px 50px;
+    font-size: 20px;
     align-items: center;
-    justify-content: center;
+    text-align: justify;
+
+}
+
+#principal{
     display: flex;
+    flex-direction: column;
+}
+
+.texto2, .texto4{
+    display: flex;
+}
+
+.imagem{
+    width: 100%;
+    height: auto;
+}
+
+.esquerdo1{
+margin-right: 20px;
+}
+
+.direito1{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+
+.imagem2{
+    height: 100%;
+    width: auto;
+}
+
+.esquerdo2{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 350px;   
+}
+
+.direito2{
+    margin-left: 20px;
 }
 

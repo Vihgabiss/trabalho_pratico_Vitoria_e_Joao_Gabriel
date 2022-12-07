@@ -1,8 +1,8 @@
-.content {
+.conteudo {
  
     overflow:hidden;
-    width: 95%;
-    height: 400px;
+    width: 1500px;
+    height: 700px;
     align-self:center;
 }
 
@@ -10,7 +10,7 @@
     display: flex;
     z-index: 1;
     position: relative;
-    bottom: -370px;
+    bottom: -670px;
 }
 
 .bar{
