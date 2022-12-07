@@ -14,21 +14,26 @@ main {
 
 h1 {
     font-family: 'Bree Serif', serif;
-    font-size: 25px;
+    font-size: 30px;
 
 }
 
 h2{
     font-family: 'Bree Serif', serif;
-    font-size: 18px;
+    font-size: 25px;
     padding: 10px 30px;
 }
 
 p{
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Quicksand', sans-serif;
     color: rgb(0, 0, 0);
     padding: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
 
+em{
+    font-weight: bold;
 }
 
 #caixas{
